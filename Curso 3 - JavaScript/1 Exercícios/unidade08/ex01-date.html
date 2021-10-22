@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            
+            var agora = new Date();
+            var meses = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+            
+            var semana = ["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
+            
+            console.log(agora.getFullYear());
+            console.log(meses[agora.getMonth()]);
+            console.log(agora.getDate());
+            console.log(semana[agora.getDay()]);
+            
+            //Descobrir o dia da semana de uma data quarquer:
+            var aniversario = new Date(1987,10,4);
+            console.log(semana[aniversario.getDay()]);
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
