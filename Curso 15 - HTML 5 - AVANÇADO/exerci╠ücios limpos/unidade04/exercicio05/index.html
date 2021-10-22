@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso HTML5 Avançado</title>
+        
+		<script>
+	       var audio;
+            
+            function inicial() {
+                audio = document.querySelector('#player');
+            }
+            
+            function play() {
+                audio.play();
+            }
+            
+            function pause() {
+                audio.pause();
+            }
+            
+            function stop() {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+            
+            window.onload = inicial;
+            
+		</script>        
+            
+    </head>
+
+    <body>
+        <!-- COLOCAR VÁRIAS OPÇÕES DO MESMO ÁUDIO PARA GARANTIR A COMPATIBILIDADE EM NAVEGADORES -->
+        <audio id="player"> 
+            <source src="audio/4%20Non%20Blondes.mp3" type="audio/mpeg">
+            <source src="audio/4%20Non%20Blondes.mp4" type="audio/mpeg">
+            <source src="audio/4%20Non%20Blondes.ogg" type="audio/ogg">
+        </audio>
+        
+        <form>
+            <input type="button" value="Play" onclick="play()">
+            <input type="button" value="Pause" onclick="pause()">
+            <input type="button" value="Stop" onclick="stop()">
+        </form>
+              
+    </body>
+</html>
